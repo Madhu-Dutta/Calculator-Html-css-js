@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Maddhu Dutta">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="guessGame-multiPlayer.css">
+    <link rel="icon" type="text/css" href="icon.jpg">
+    <!-- Font Awesome -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">      
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    </head>
+    <body>
+        <div id="calc-container">
+
+            <h2>Calculator</h2>
+            Number: <input id="a" type="text"><br><br>
+            Number: <input id="b" type="text"><br><br>
+            <div class="right">
+            <input type="button" class="btn" onclick="sum();" value="+" />
+            <input type="button" class="btn" onclick="minus();" value="-" />
+            <input type="button" class="btn" onclick="multi();" value="*" />
+            <input type="button" class="btn" onclick="div();" value="/" />
+            <input type="button" class="btn" onclick="remaindr();" value="%"/>
+            <input type="button" class="btn" onclick="avg();" value="Average"/>
+            <input type="button" class="btn" id="clear" value="CE"/>
+            </div>
+            <select id="calcOper">
+                    <option value="">Select your option</option>
+                    <option value="0">+</option>
+                    <option value="1">-</option>
+                    <option value="2">*</option>
+                    <option value="3">÷</option>
+                    <option value="4">%</option>
+                    <option value="5">Avg</option>
+              </select>
+              <input type="button" id="dropbtn" onClick="calc();" value="Calculate Total"><br>
+            <p>Result: <span id="val"></span></p>
+            </div>  
+
+            <div class="avgContainer">   
+            <h2>Average Calculator</h2>
+            Number: <input type="text" id="n1" value=""><br><br>
+            <button id="numbtn">Insert</button>
+            <input type="button" id="clearAvg" value="CE"/><br>
+
+            <p id="arrDis">Numbers: </p>            
+            <p id="avg">Average: </p>
+
+        <div>
+        <script src="calculator.js">            
+        </script>
+    </body>
+</html>
